@@ -118,6 +118,16 @@ line-height: normal;
 letter-spacing: -0.6px;
 }
 
+span.text.header {
+  color: #FCFCFC;
+font-family: "Instrument Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.8px;
+}
+
 span.text:hover {
   transform:scale(1.0);
   cursor:default; 
@@ -183,4 +193,57 @@ button[disabled] {
 
 button.svg-btn {
   gap:10px;
+}
+
+.avatar, .avatar-google {
+  user-select: none;
+  pointer-events: none;
+  display:flex;
+  width:100%;
+  align-items:center;
+  justify-content:center;
+}
+
+.avatar > img {
+  pointer-events: none;
+  user-select: none;
+  width: 100px;
+height: 100px;
+  border-radius: 100px;
+border: 5px solid;
+  border-color: #7241ff
+}
+
+
+.avatar.google >img {
+  border-radius:100px;
+  border-radius: 100px;
+border: 5px solid;
+border-color: linear-gradient(to bottom, #7241ff, #7241ff, #7241ff, #7241ff, #7241ff);
+}
+
+.text.header purple {
+  color: #7241ff;
+  margin:0;
+  padding:0;
+}
+
+.avatar.spinning {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.text.red {
+  color: #F34848;
 }
