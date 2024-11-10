@@ -33,7 +33,7 @@ flex-direction: column;
 justify-content: flex-end;
 align-items: flex-start;
 gap: 15px;
-  
+  margin:0;
   border-radius: 22.5px 22.5px 0px 0px;
 background: #1E0843;
 }
